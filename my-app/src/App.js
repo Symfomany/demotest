@@ -1,20 +1,11 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import LoadingIndicator from "./LoadingIndicator";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      posts: []
-    };
-  }
-
-  componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then(response => response.json())
-      .then(json => console.log(json));
+    this.state = {};
   }
 
   render() {
